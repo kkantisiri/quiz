@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		AD3F186920B0A84A00463647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3F186820B0A84A00463647 /* AppDelegate.swift */; };
-		AD3F186B20B0A84B00463647 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3F186A20B0A84B00463647 /* ViewController.swift */; };
 		AD3F186E20B0A84B00463647 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD3F186C20B0A84B00463647 /* Main.storyboard */; };
 		AD3F187020B0A84B00463647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD3F186F20B0A84B00463647 /* Assets.xcassets */; };
 		AD3F187320B0A84B00463647 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD3F187120B0A84B00463647 /* LaunchScreen.storyboard */; };
+		ADB06F5820B9CFCD00C83B55 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB06F5720B9CFCD00C83B55 /* Answer.swift */; };
+		ADB06F5A20B9D13800C83B55 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB06F5920B9D13800C83B55 /* Question.swift */; };
+		ADB06F5C20B9D6D200C83B55 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB06F5B20B9D6D200C83B55 /* Quiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AD3F186520B0A84A00463647 /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3F186820B0A84A00463647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AD3F186A20B0A84B00463647 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AD3F186D20B0A84B00463647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD3F186F20B0A84B00463647 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD3F187220B0A84B00463647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD3F187420B0A84B00463647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADB06F5720B9CFCD00C83B55 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		ADB06F5920B9D13800C83B55 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		ADB06F5B20B9D6D200C83B55 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				AD3F186820B0A84A00463647 /* AppDelegate.swift */,
-				AD3F186A20B0A84B00463647 /* ViewController.swift */,
 				AD3F186C20B0A84B00463647 /* Main.storyboard */,
 				AD3F186F20B0A84B00463647 /* Assets.xcassets */,
 				AD3F187120B0A84B00463647 /* LaunchScreen.storyboard */,
 				AD3F187420B0A84B00463647 /* Info.plist */,
+				ADB06F5720B9CFCD00C83B55 /* Answer.swift */,
+				ADB06F5920B9D13800C83B55 /* Question.swift */,
+				ADB06F5B20B9D6D200C83B55 /* Quiz.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3F186B20B0A84B00463647 /* ViewController.swift in Sources */,
+				ADB06F5A20B9D13800C83B55 /* Question.swift in Sources */,
 				AD3F186920B0A84A00463647 /* AppDelegate.swift in Sources */,
+				ADB06F5C20B9D6D200C83B55 /* Quiz.swift in Sources */,
+				ADB06F5820B9CFCD00C83B55 /* Answer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
