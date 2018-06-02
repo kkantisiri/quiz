@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD09400620C314D800523F49 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD09400520C314D800523F49 /* QuizViewController.swift */; };
 		AD3F186920B0A84A00463647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3F186820B0A84A00463647 /* AppDelegate.swift */; };
 		AD3F186E20B0A84B00463647 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD3F186C20B0A84B00463647 /* Main.storyboard */; };
 		AD3F187020B0A84B00463647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD3F186F20B0A84B00463647 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD09400520C314D800523F49 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		AD3F186520B0A84A00463647 /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3F186820B0A84A00463647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD3F186D20B0A84B00463647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				AD3F186820B0A84A00463647 /* AppDelegate.swift */,
 				AD3F186C20B0A84B00463647 /* Main.storyboard */,
+				AD09400520C314D800523F49 /* QuizViewController.swift */,
 				AD3F186F20B0A84B00463647 /* Assets.xcassets */,
 				AD3F187120B0A84B00463647 /* LaunchScreen.storyboard */,
 				AD3F187420B0A84B00463647 /* Info.plist */,
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADB06F5A20B9D13800C83B55 /* Question.swift in Sources */,
+				AD09400620C314D800523F49 /* QuizViewController.swift in Sources */,
 				AD3F186920B0A84A00463647 /* AppDelegate.swift in Sources */,
 				ADB06F5C20B9D6D200C83B55 /* Quiz.swift in Sources */,
 				ADB06F5820B9CFCD00C83B55 /* Answer.swift in Sources */,

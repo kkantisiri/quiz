@@ -41,7 +41,7 @@
         <!--Quiz-->
         <scene sceneID="z3p-M7-vIU">
             <objects>
-                <viewController title="Quiz" modalTransitionStyle="flipHorizontal" id="3k6-Fe-h9L" sceneMemberID="viewController">
+                <viewController title="Quiz" modalTransitionStyle="flipHorizontal" id="3k6-Fe-h9L" customClass="QuizViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="alq-Ru-vE4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,6 +85,11 @@
                         <viewLayoutGuide key="safeArea" id="l0M-5M-MDQ"/>
                     </view>
                     <connections>
+                        <outlet property="answerButton0" destination="4pS-x9-3TD" id="QgA-Hu-ePl"/>
+                        <outlet property="answerButton1" destination="V4o-yH-Q9g" id="nQL-Lf-RrJ"/>
+                        <outlet property="answerButton2" destination="ugo-Q7-FXC" id="IZ9-q8-anY"/>
+                        <outlet property="answerButton3" destination="0mP-K2-Ubr" id="xKH-UO-Df1"/>
+                        <outlet property="questionLabel" destination="IAn-Vl-sEt" id="TgX-Ot-G0o"/>
                         <segue destination="80j-eJ-Rwf" kind="presentation" identifier="Show Results" id="4TA-Vm-VDW"/>
                     </connections>
                 </viewController>
