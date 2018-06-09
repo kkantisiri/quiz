@@ -15,6 +15,7 @@
 		ADB06F5820B9CFCD00C83B55 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB06F5720B9CFCD00C83B55 /* Answer.swift */; };
 		ADB06F5A20B9D13800C83B55 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB06F5920B9D13800C83B55 /* Question.swift */; };
 		ADB06F5C20B9D6D200C83B55 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB06F5B20B9D6D200C83B55 /* Quiz.swift */; };
+		ADB2EA8020CC566A00FA8202 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB2EA7F20CC566A00FA8202 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		ADB06F5720B9CFCD00C83B55 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		ADB06F5920B9D13800C83B55 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		ADB06F5B20B9D6D200C83B55 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		ADB2EA7F20CC566A00FA8202 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				AD3F186820B0A84A00463647 /* AppDelegate.swift */,
 				AD3F186C20B0A84B00463647 /* Main.storyboard */,
+				ADB2EA7F20CC566A00FA8202 /* ResultsViewController.swift */,
 				AD09400520C314D800523F49 /* QuizViewController.swift */,
 				AD3F186F20B0A84B00463647 /* Assets.xcassets */,
 				AD3F187120B0A84B00463647 /* LaunchScreen.storyboard */,
@@ -150,6 +153,7 @@
 				AD3F186920B0A84A00463647 /* AppDelegate.swift in Sources */,
 				ADB06F5C20B9D6D200C83B55 /* Quiz.swift in Sources */,
 				ADB06F5820B9CFCD00C83B55 /* Answer.swift in Sources */,
+				ADB2EA8020CC566A00FA8202 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

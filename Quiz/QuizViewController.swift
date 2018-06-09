@@ -100,15 +100,28 @@ class QuizViewController: UIViewController {
         answerButton3.setTitle(question.answers[3].text, for: .normal)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func next() {
+        quiz.next()
+        show(question: quiz.currentQuestion)
     }
-    */
+    
+    @IBAction func answerButtonPressed(_ sender: UIButton) {
+        if quiz.currentQuestion.check(answerIndex:  sender.tag) {
+            quiz.increaseScore()
+        }
+        if quiz.currentQuestionNumber < quiz.questions.count {
+            next()
+        }
+        else {
+            print("Out of Questions");
+            print(quiz.score);
+            performSegue(withIdentifier: "Show Results", sender: self)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let resultsViewController = segue.destination as! ResultsViewController
+        resultsViewController.quiz = quiz
+    }
 
 }
