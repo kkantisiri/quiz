@@ -123,5 +123,11 @@ class QuizViewController: UIViewController {
         let resultsViewController = segue.destination as! ResultsViewController
         resultsViewController.quiz = quiz
     }
+    
+    @IBAction func unWindToQuizViewController(_ segue: UIStoryboardSegue) {
+        quiz.reset()
+        show(question: quiz.currentQuestion)
+    }
 
 }
+
