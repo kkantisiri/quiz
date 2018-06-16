@@ -35,6 +35,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TitleBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Aao-CN-7Uc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1po-70-iJQ">
                                 <rect key="frame" x="141" y="411" width="38" height="32"/>
                                 <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
@@ -52,8 +55,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Aao-CN-7Uc" firstAttribute="leading" secondItem="nSr-eI-zC4" secondAttribute="leading" id="0MA-Kk-rLw"/>
+                            <constraint firstItem="Aao-CN-7Uc" firstAttribute="bottom" secondItem="nSr-eI-zC4" secondAttribute="bottom" id="6tE-ZH-esK"/>
                             <constraint firstItem="7aO-Ti-Okx" firstAttribute="top" secondItem="nSr-eI-zC4" secondAttribute="top" constant="53" id="D7P-3i-kNa"/>
+                            <constraint firstItem="Aao-CN-7Uc" firstAttribute="top" secondItem="03x-l0-TeT" secondAttribute="top" id="egV-JQ-UQE"/>
                             <constraint firstItem="1po-70-iJQ" firstAttribute="centerX" secondItem="03x-l0-TeT" secondAttribute="centerX" id="fVF-eF-mHs"/>
+                            <constraint firstItem="Aao-CN-7Uc" firstAttribute="trailing" secondItem="nSr-eI-zC4" secondAttribute="trailing" id="rR0-xs-8zE"/>
                             <constraint firstItem="1po-70-iJQ" firstAttribute="centerY" secondItem="03x-l0-TeT" secondAttribute="centerY" constant="143" id="wip-gC-2Xr"/>
                             <constraint firstItem="nSr-eI-zC4" firstAttribute="trailing" secondItem="7aO-Ti-Okx" secondAttribute="trailing" constant="80" id="zJ0-hM-TZs"/>
                         </constraints>
@@ -62,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7EA-r8-sem" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-282" y="-17"/>
+            <point key="canvasLocation" x="-283.125" y="-17.95774647887324"/>
         </scene>
         <!--Quiz-->
         <scene sceneID="z3p-M7-vIU">
@@ -79,36 +86,44 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3T2-Ka-6uR">
-                                <rect key="frame" x="16" y="424" width="288" height="128"/>
+                                <rect key="frame" x="16" y="360" width="288" height="192"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pS-x9-3TD">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="32"/>
-                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
-                                        <state key="normal" title="Answer 1"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="48"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="30"/>
+                                        <state key="normal" title="Answer 1">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="answerButtonPressed:" destination="3k6-Fe-h9L" eventType="touchUpInside" id="HjS-EF-CWx"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4o-yH-Q9g">
-                                        <rect key="frame" x="0.0" y="32" width="288" height="32"/>
-                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
-                                        <state key="normal" title="Answer 2"/>
+                                        <rect key="frame" x="0.0" y="48" width="288" height="48"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="30"/>
+                                        <state key="normal" title="Answer 2">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="answerButtonPressed:" destination="3k6-Fe-h9L" eventType="touchUpInside" id="KLK-f2-K19"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugo-Q7-FXC">
-                                        <rect key="frame" x="0.0" y="64" width="288" height="32"/>
-                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
-                                        <state key="normal" title="Answer 3"/>
+                                        <rect key="frame" x="0.0" y="96" width="288" height="48"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="30"/>
+                                        <state key="normal" title="Answer 3">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="answerButtonPressed:" destination="3k6-Fe-h9L" eventType="touchUpInside" id="cxm-A4-WxJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mP-K2-Ubr">
-                                        <rect key="frame" x="0.0" y="96" width="288" height="32"/>
-                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
-                                        <state key="normal" title="Answer 4"/>
+                                        <rect key="frame" x="0.0" y="144" width="288" height="48"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="30"/>
+                                        <state key="normal" title="Answer 4">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="answerButtonPressed:" destination="3k6-Fe-h9L" eventType="touchUpInside" id="sxp-YP-ssK"/>
                                         </connections>
@@ -116,7 +131,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.32180314240000002" green="0.79112731540000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="l0M-5M-MDQ" firstAttribute="trailing" secondItem="3T2-Ka-6uR" secondAttribute="trailing" constant="16" id="Ghk-uS-9Oo"/>
                             <constraint firstItem="IAn-Vl-sEt" firstAttribute="centerY" secondItem="alq-Ru-vE4" secondAttribute="centerY" constant="-197.5" id="NPs-qA-q2f"/>
@@ -147,6 +162,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ResultsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="K7i-WY-7pV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udA-BI-d7d">
                                 <rect key="frame" x="132.5" y="248" width="55" height="32"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
@@ -173,15 +191,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="udA-BI-d7d" firstAttribute="centerX" secondItem="REh-cN-Eqg" secondAttribute="centerX" id="04Y-qT-dVz"/>
                             <constraint firstItem="iLD-s1-hAg" firstAttribute="top" secondItem="Hq5-Vv-n5X" secondAttribute="top" constant="118" id="0F3-2p-yC3"/>
+                            <constraint firstItem="K7i-WY-7pV" firstAttribute="leading" secondItem="Hq5-Vv-n5X" secondAttribute="leading" id="2EN-8Q-6sO"/>
                             <constraint firstItem="NJB-4f-1oC" firstAttribute="centerX" secondItem="REh-cN-Eqg" secondAttribute="centerX" constant="1.25" id="7IA-SI-4aP"/>
+                            <constraint firstItem="K7i-WY-7pV" firstAttribute="top" secondItem="REh-cN-Eqg" secondAttribute="top" id="8Dw-fk-XTc"/>
+                            <constraint firstItem="K7i-WY-7pV" firstAttribute="bottom" secondItem="Hq5-Vv-n5X" secondAttribute="bottom" id="I2x-LA-czG"/>
                             <constraint firstItem="udA-BI-d7d" firstAttribute="centerY" secondItem="REh-cN-Eqg" secondAttribute="centerY" constant="-20" id="K40-JL-y1U"/>
                             <constraint firstItem="NJB-4f-1oC" firstAttribute="centerY" secondItem="REh-cN-Eqg" secondAttribute="centerY" constant="-105.75" id="ayP-NY-dvZ"/>
                             <constraint firstItem="Hq5-Vv-n5X" firstAttribute="trailing" secondItem="iLD-s1-hAg" secondAttribute="trailing" constant="104" id="bid-cV-ubu"/>
                             <constraint firstItem="iLD-s1-hAg" firstAttribute="leading" secondItem="Hq5-Vv-n5X" secondAttribute="leading" constant="107" id="djg-q0-YlR"/>
+                            <constraint firstItem="K7i-WY-7pV" firstAttribute="trailing" secondItem="Hq5-Vv-n5X" secondAttribute="trailing" id="hRN-IN-S7g"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hq5-Vv-n5X"/>
                     </view>
@@ -195,4 +217,8 @@
             <point key="canvasLocation" x="1402.5" y="-14.788732394366198"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ResultsBackground" width="3429" height="2280"/>
+        <image name="TitleBackground" width="6016" height="4000"/>
+    </resources>
 </document>
